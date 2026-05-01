@@ -21,7 +21,7 @@ st.write("Data Preview")
 
 # DATABASE CONNECTION
 engine = create_engine(
-    "mysql+pymysql://DB_USERNAME:DB_TOKEN@gateway01.ap-southeast-1.prod.aws.tidbcloud.com:4000/literacy_gdp_analysis",
+    "mysql+pymysql://DB_USERNAME.root:DB_TOKEN@gateway01.ap-southeast-1.prod.aws.tidbcloud.com:4000/literacy_gdp_analysis",
     connect_args={"ssl": {"ssl": True}}
 )
 
